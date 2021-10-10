@@ -282,7 +282,7 @@ nav .container .first li:last-of-type:hover a + .other-links .second li a:hover:
 }
 /* Landing Section */
 .landing {
-    background-image: url("/images/landing-background.png");
+    background-image: url("https://raw.githubusercontent.com/Hibanelson/Portfolio-Web-Template/main/images/landing-background.png");
     background-size: 100% 100%;
     height: 820px;
     position: relative;
@@ -428,29 +428,29 @@ nav .container .first li:last-of-type:hover a + .other-links .second li a:hover:
     height: 315px;
     width: 100%;
     background-size: 100% 100%;
-    transition: 1s;
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
-    -ms-transition: 1s;
-    -o-transition: 1s;
+    transition: 2s;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -ms-transition: 2s;
+    -o-transition: 2s;
 }
 .features-container .feature:first-of-type .img {
-    background-image: url("/images/red-testimonial1.png");
+    background-image: url("https://raw.githubusercontent.com/Hibanelson/Portfolio-Web-Template/main/images/red-testimonial1.png");
 }
 .features-container .feature:nth-of-type(2) .img {
-    background-image: url("/images/green-testimonial1.png");
+    background-image: url("https://raw.githubusercontent.com/Hibanelson/Portfolio-Web-Template/main/images/green-testimonial1.png");
 }
 .features-container .feature:last-of-type .img {
-    background-image: url("/images/blue-testimonial1.png");
+    background-image: url("https://raw.githubusercontent.com/Hibanelson/Portfolio-Web-Template/main/images/blue-testimonial1.png");
 }
 .features-container .feature:first-of-type .img:hover {
-    background-image: url("/images/red-testimonial2.png");
+    background-image: url("https://raw.githubusercontent.com/Hibanelson/Portfolio-Web-Template/main/images/red-testimonial2.png");
 }
 .features-container .feature:nth-of-type(2) .img:hover {
-    background-image: url("/images/green-testimonial2.png");
+    background-image: url("https://raw.githubusercontent.com/Hibanelson/Portfolio-Web-Template/main/images/green-testimonial2.png");
 }
 .features-container .feature:last-of-type .img:hover {
-    background-image: url("/images/blue-testimonial2.png");
+    background-image: url("https://raw.githubusercontent.com/Hibanelson/Portfolio-Web-Template/main/images/blue-testimonial2.png");
 }
 .features-container .feature h2, .features-container .feature p {
     text-align: center;
@@ -675,22 +675,22 @@ nav .container .first li:last-of-type:hover a + .other-links .second li a:hover:
     background-size: 100% 100%;
 }
 .services-container .service:first-of-type .info-container .grey-square {
-    background-image: url("/images/1.png");
+    background-image: url("https://raw.githubusercontent.com/Hibanelson/Portfolio-Web-Template/main/images/1.png");
 }
 .services-container .service:nth-of-type(2) .info-container .grey-square {
-    background-image: url("/images/2.png");
+    background-image: url("https://raw.githubusercontent.com/Hibanelson/Portfolio-Web-Template/main/images/2.png");
 }
 .services-container .service:nth-of-type(3) .info-container .grey-square {
-    background-image: url("/images/3.png");
+    background-image: url("https://raw.githubusercontent.com/Hibanelson/Portfolio-Web-Template/main/images/3.png");
 }
 .services-container .service:nth-of-type(4) .info-container .grey-square {
-    background-image: url("/images/4.png");
+    background-image: url("https://raw.githubusercontent.com/Hibanelson/Portfolio-Web-Template/main/images/4.png");
 }
 .services-container .service:nth-of-type(5) .info-container .grey-square {
-    background-image: url("/images/5.png");
+    background-image: url("https://raw.githubusercontent.com/Hibanelson/Portfolio-Web-Template/main/images/5.png");
 }
 .services-container .service:last-of-type .info-container .grey-square {
-    background-image: url("/images/6.png");
+    background-image: url("https://raw.githubusercontent.com/Hibanelson/Portfolio-Web-Template/main/images/6.png");
 }
 .services-container .service .info-container span {
     width: 50%;
