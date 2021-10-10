@@ -655,7 +655,7 @@ nav .container .first li:last-of-type:hover a + .other-links .second li a:hover:
     align-items: center;
     justify-content: space-between;
     margin-bottom: 20px;
-    margin-right: 20px;
+    margin-right: 15px;
 }
 .services-container .service i {
     margin-top: 90px;
