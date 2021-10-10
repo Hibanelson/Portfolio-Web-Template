@@ -1182,6 +1182,8 @@ footer {
     background-color: #1b1b1b;
     color: #fff;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 footer .container {
     padding-top: 30px;
@@ -1190,7 +1192,6 @@ footer .container {
     text-align: center;
     flex-wrap: wrap;
     position: relative;
-    margin-bottom: 50px;
 }
 footer .container div , footer .container ul {
     width: 250px;
@@ -1212,12 +1213,5 @@ footer .container .img-container {
     margin-bottom: 50px;
 }
 footer .last {
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
+    margin-bottom: 20px;
 }
