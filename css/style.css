@@ -1,6 +1,7 @@
 :root {
     --grey: #eaeaea;
     --blue: #4287f5;
+    --main-transition: .3s;
 }
 /*General Properties*/
 * {
