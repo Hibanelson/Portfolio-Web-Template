@@ -519,6 +519,7 @@ nav .container .first .other-links .second li a:hover::before {
 }
 .articles-container .article .info-container a {
     font-weight: bold;
+    color: var(--blue);
 }
 .articles-container .article:hover .info-container i {
     animation: point .5s infinite;
@@ -573,6 +574,35 @@ nav .container .first .other-links .second li a:hover::before {
     -moz-transition: .3s;
     -ms-transition: .3s;
     -o-transition: .3s;
+    overflow: hidden;
+    position: relative;
+}
+.gallery .gallery-container img::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(255 255 255 / 20%);
+  width: 0;
+  height: 0;
+  opacity: 0;
+  z-index: 2;
+}
+.gallery .gallery-container img:hover::before {
+   animation: flash 0.7s;
+
+}
+@keyframes flash {
+  0%,
+  40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 200%;
+    height: 200%;
+  }
 }
 .gallery .gallery-container .gallery-item:hover img {
     transform: rotate(-20deg) scale(1.4);
