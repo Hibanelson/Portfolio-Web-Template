@@ -291,6 +291,14 @@ nav .container .first .other-links .second li {
     align-items: center;
     border-bottom: 1px solid #ddd;
 }
+nav .container .first .other-links .second li.before-last , nav .container .first .other-links .second li:last-of-type {
+ border-bottom: none;   
+}
+@media(max-width: 991px) {
+    nav .container .first .other-links .second li.before-last {
+ border-bottom: 1px solid #ddd;  
+}
+}
 nav .container .first .other-links .second li:hover {
     background-color: #fafafa;
 }
