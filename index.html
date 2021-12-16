@@ -800,22 +800,22 @@
             <div class="stats-container">
                 <div class="stat">
                     <i class="far fa-user"></i>
-                    <p>300</p>
+                    <p class="number" data-goal="300">0</p>
                     <p>Clients</p>
                 </div>
                 <div class="stat">
                     <i class="fas fa-code"></i>
-                    <p>400</p>
+                    <p class="number" data-goal="400">0</p>
                     <p>Projects</p>
                 </div>
                 <div class="stat">
                     <i class="fas fa-globe-asia"></i>
-                    <p>12</p>
+                    <p class="number" data-goal="12">0</p>
                     <p>Countries</p>
                 </div>
                 <div class="stat">
                     <i class="far fa-money-bill-alt"></i>
-                    <p>500K</p>
+                    <p class="number" data-goal="500">0</p>
                     <p>Money</p>
                 </div>
             </div>
@@ -942,6 +942,19 @@ let counter = setInterval(() => {
     clearInterval(counter);
   }
 }, 1000);
+        let nums = document.querySelectorAll(".stats .number");
+        let statsSection = document.querySelector(".stats");
+        let started = false; // Function Started ? No
+        function startCount(el) {
+  let goal = el.dataset.goal;
+  let count = setInterval(() => {
+    el.textContent++;
+    if (el.textContent == goal) {
+      clearInterval(count);
+    }
+  }, 2000 / goal);
+}
+        
     </script>
 </body>
 </html>
