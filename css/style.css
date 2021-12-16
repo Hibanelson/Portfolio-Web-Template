@@ -1164,64 +1164,30 @@ nav .container .first .other-links .second li a:hover::before {
     flex-direction: column;
     justify-content: center;
 }
-.skills-container .info-container .percent-container {
-    margin-bottom: 20px;
+.skill h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.skills-container .info-container .percent-container .percent {
-    position: relative;
-    height: 30px;
-    width: 100%;
-    background-color: var(--grey);
-    z-index: 1;
+.skill h3 span {
+  font-size: 12px;
+  border: 1px solid #ccc;
+  padding: 3px 5px;
+  border-radius: 4px;
+  color: var(--main-color);
 }
-.skills-container .info-container .percent-container p {
-    font-weight: bold;
-    margin-bottom: 10px;
+.skill .the-progress {
+  height: 30px;
+  background-color: #eee;
+  position: relative;
 }
-.skills-container .info-container .percent-container .percent::before {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background-color: var(--blue);
-    z-index: 2;
-
-}
-.skills-container .info-container .percent-container:first-of-type .percent::before, .skills-container .info-container .percent-container:last-of-type .percent::before {
-    width: 80%;
-}
-.skills-container .info-container .percent-container:nth-of-type(2) .percent::before {
-    width: 85%;
-}
-.skills-container .info-container .percent-container:nth-of-type(3) .percent::before {
-    width: 70%;
-}
-.skills-container .info-container .percent-container .percent::after {
-    content: '';
-    position: absolute;
-    top: -35px;
-    color: var(--blue);
-    text-align: center;
-    right: 0;
-    width: 50px;
-    height: 25px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
-}
-.skills-container .info-container .percent-container:first-of-type .percent::after, .skills-container .info-container .percent-container:last-of-type .percent::after {
-    content: '80%';
-}
-.skills-container .info-container .percent-container:nth-of-type(2) .percent::after {
-    content: '85%';
-}
-.skills-container .info-container .percent-container:nth-of-type(3) .percent::after {
-    content: '70%';
+ .skill .the-progress span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: var(--main-color);
+  transition: width 0.5s linear;
 }
 /* How It Works Section properties */
 .how-it-works {
