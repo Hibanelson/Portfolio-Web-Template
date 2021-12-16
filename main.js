@@ -7,3 +7,4 @@ let progressSpans = document.querySelectorAll(".the-progress span");
         span.style.width = span.dataset.width;
     });
   }
+        }
