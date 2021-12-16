@@ -540,26 +540,30 @@
                     <img src="images/apple.png" alt="apple">
                 </div>
                 <div class="info-container">
-                    <div class="percent-container">
-                        <p>HTML</p>
-                        <div class="percent">
-                        </div>
-                    </div>
-                    <div class="percent-container">
-                        <p>CSS</p>
-                        <div class="percent">
-                        </div>
-                    </div>
-                    <div class="percent-container">
-                        <p>JavaScript</p>
-                        <div class="percent">
-                        </div>
-                    </div>
-                    <div class="percent-container">
-                        <p>Python</p>
-                        <div class="percent">
-                        </div>
-                    </div>
+                    <div class="skill">
+            <h3>HTML <span>80%</span></h3>
+            <div class="the-progress">
+              <span style="width: 0" data-width="80%"></span>
+            </div>
+          </div>
+          <div class="skill">
+            <h3>CSS <span>85%</span></h3>
+            <div class="the-progress">
+              <span style="width: 0" data-width="85%"></span>
+            </div>
+          </div>
+          <div class="skill">
+            <h3>JavaScript <span>70%</span></h3>
+            <div class="the-progress">
+              <span style="width: 0" data-width="70%"></span>
+            </div>
+          </div>
+          <div class="skill">
+            <h3>Python <span>80%</span></h3>
+            <div class="the-progress">
+              <span style="width: 0" data-width="80%"></span>
+            </div>
+          </div>
                 </div>
             </div>
         </div>
@@ -901,5 +905,16 @@
         </div>
         <p class="copyright">Made With &lt;3 By Elzero</p>
       </div>
+    <script>
+        let progressSpans = document.querySelectorAll(".the-progress span");
+        let section = document.querySelector(".our-skills");
+        window.onscroll = function () {
+        // Skills Animate Width
+        if (window.scrollY >= section.offsetTop - 250) {
+         progressSpans.forEach((span) => {
+        span.style.width = span.dataset.width;
+    });
+  }
+    </script>
 </body>
 </html>
