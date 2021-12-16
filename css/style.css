@@ -657,6 +657,7 @@ nav .container .first .other-links .second li a:hover::before {
 }
 .features-container .feature .img::after {
   content: "";
+  z-index: 3;
   position: absolute;
   bottom: 0;
   right: 0;
