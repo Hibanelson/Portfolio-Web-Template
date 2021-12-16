@@ -906,8 +906,35 @@ nav .container .first .other-links .second li a:hover::before {
     -o-border-radius: 8px;
     background-color: #f3f3f3;
 }
+.members-container .member::before,
+.members-container .member::after {
+  content: "";
+  background-color: #f3f3f3;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  border-radius: 10px;
+  transition: var(--main-transition);
+}
+.members-container .member::before {
+  width: calc(100% - 60px);
+  z-index: -2;
+}
+.members-container .member::after {
+  z-index: -1;
+  background-color: #e4e4e4;
+  width: 0;
+}
+.members-container .member:hover::after {
+  width: calc(100% - 60px);
+}
 .members-container .member img {
     width: 85%;
+    transition: var(--main-transition);
+}
+.members-container .member:hover img {
+  filter: grayscale(100%);
 }
 .members-container .member .social {
     width: 10%;
