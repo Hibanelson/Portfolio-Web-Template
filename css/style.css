@@ -166,7 +166,7 @@ position: relative;
 }
 nav .container {
     display: grid;
-    grid-template-columns: 100px 500px;
+    grid-template-columns: auto 1fr;
     justify-content: space-between;
     align-items: center;
 }
@@ -185,7 +185,8 @@ nav .container h2 {
 }
 nav .container .first {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, auto);
+    justify-content: end;
 }
 nav .container .first > li > a {
     display: flex;
@@ -1790,4 +1791,56 @@ nav .container .first .other-links .second li a:hover::before {
     margin: 50px 0 0;
     border-top: 1px solid #444;
   }
-  
+@media (max-width: 480px) {
+    h2.section-header {
+        font-size: 14px;
+        padding: 8px;
+    }
+    .landing .container .info-container h1 {
+        font-size: 1.3em;
+    }
+    .landing .container .info-container p {
+        font-size: 0.85em;
+    }
+    .event-container .subscribe {
+        width: 100%;
+        border-radius: 15px;
+    }
+    .event-container .subscribe form {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .event-container .subscribe input:first-of-type,
+    .event-container .subscribe input:last-of-type {
+        width: 100%;
+        text-align: center;
+    }
+    .discount .form-container form label {
+        font-size: 24px;
+    }
+    .discount .form-container form {
+        width: 90%;
+    }
+    .stats .stats-container .stat {
+        padding: 25px;
+    }
+    .stats .stats-container .stat p:first-of-type {
+        font-size: 36px;
+    }
+    .footer .box h3 {
+        font-size: 36px;
+    }
+    .footer .footer-gallery img {
+        width: 60px;
+    }
+}
+@media (max-width: 375px) {
+    .landing .container .info-container h1 {
+        font-size: 1.1em;
+    }
+    .event-container .info-container .time-container .time-item .value {
+        padding: 10px;
+        font-size: 18px;
+    }
+}
+
